@@ -1,0 +1,21 @@
+/* Required plugins:
+plugins {
+	id "com.avast.gradle.docker-compose" version "YOUR_VERSION"
+}
+*/
+
+dockerCompose {
+//	environment.put "TEST_ENV_PROP", "test-prop"
+
+//	demo {
+//		projectName = null
+//		useComposeFiles = ["demo.yml"]
+//		startedServices = ["demo-app", "demo-app2"]
+//	}
+
+	application {
+		projectName = null
+		useComposeFiles = ["docker/docker-compose.yml"]
+	}
+
+}

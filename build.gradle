@@ -4,6 +4,7 @@ plugins {
 	id 'java'
 	id 'idea'
 	id 'com.gorylenko.gradle-git-properties' version '2.2.0'
+	id "com.avast.gradle.docker-compose" version "0.14.2"
 }
 
 group = 'com.rbiedrawa.docker.app'
@@ -12,6 +13,7 @@ sourceCompatibility = '11'
 
 
 apply from: 'gradle/docker.gradle'
+apply from: 'gradle/docker-compose.gradle'
 
 configurations {
 	compileOnly {
