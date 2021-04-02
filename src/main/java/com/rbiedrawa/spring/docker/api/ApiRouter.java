@@ -9,8 +9,10 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
+import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
 
+@Slf4j
 @Configuration
 public class ApiRouter {
 
@@ -20,6 +22,9 @@ public class ApiRouter {
 	}
 
 	private HandlerFunction<ServerResponse> helloWorldFunction() {
-		return request -> ServerResponse.ok().body(Mono.just("Hello World!"), String.class);
+		return request -> ServerResponse.ok().body(Mono.create(sink -> {
+			log.info("Hello World Requested !!!");
+			sink.success("Hello World");
+		}), String.class);
 	}
 }

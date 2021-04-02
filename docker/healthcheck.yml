@@ -1,0 +1,17 @@
+---
+version: '2'
+services:
+  spring-docker-setup:
+    image: spring-docker-setup-dockerfile:0.0.1-SNAPSHOT
+    container_name: spring-docker-setup-healthcheck
+    restart: always
+    healthcheck:
+      test: [ "CMD", "/app/healthcheck" ]
+      interval: 5s
+      timeout: 10s
+      start_period: 20s
+      retries: 3
+    ports:
+      - 8080
+    environment:
+      spring.profiles.active: docker

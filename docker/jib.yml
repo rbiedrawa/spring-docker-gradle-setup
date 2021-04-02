@@ -1,0 +1,11 @@
+---
+version: '2'
+services:
+  spring-docker-setup:
+    image: spring-docker-setup-jib-plugin:0.0.1-SNAPSHOT
+    container_name: spring-docker-setup-jib
+    restart: always
+    ports:
+      - 8080
+    environment:
+      spring.profiles.active: docker

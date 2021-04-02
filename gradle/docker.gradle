@@ -1,5 +1,18 @@
 bootBuildImage {
 	imageName = "${project.group}/${project.name}:${project.version}"
+
+//	publish = true
+//	docker {
+//		host = "tcp://192.168.99.100:2376"
+//		tlsVerify = true
+//		certPath = "/home/users/.minikube/certs"
+//		publishRegistry {
+//			username = "user"
+//			password = "secret"
+//			url = "https://docker.example.com/v1/"
+//			email = "user@example.com"
+//		}
+//	}
 }
 
 task displayDockerImageName {

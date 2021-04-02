@@ -13,9 +13,19 @@ dockerCompose {
 //		startedServices = ["demo-app", "demo-app2"]
 //	}
 
-	application {
+	bootApp {
 		projectName = null
 		useComposeFiles = ["docker/docker-compose.yml"]
+	}
+
+	jib {
+		projectName = "jib"
+		useComposeFiles = ["docker/jib.yml"]
+	}
+
+	healthcheck {
+		projectName = "healthcheck"
+		useComposeFiles = ["docker/healthcheck.yml"]
 	}
 
 }

@@ -1,0 +1,7 @@
+/* Required plugins:
+plugins {
+	id "com.google.cloud.tools.jib" version "YOUR_VERSION"
+}
+*/
+
+jib.to.image = "${project.name}-jib-plugin:0.0.1-SNAPSHOT"
