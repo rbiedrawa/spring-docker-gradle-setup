@@ -2,7 +2,7 @@
 
 This repository contains sample setup for building optimized docker image and shows some useful plugins and techniques.
 
-## Patterns, technologies and concepts demonstrated here.
+## Features
 
 * Efficient docker image using **Layered Jars**.
 * **Multi-stage Docker** build.
