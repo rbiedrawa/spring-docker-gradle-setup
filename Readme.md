@@ -1,4 +1,4 @@
-# Dockerize your Spring Boot application - Useful plugins and techniques to build efficient docker image.
+# Dockerize your Spring Boot application - Useful plugins and techniques to build efficient docker image
 
 This repository contains sample setup for building optimised docker image and shows some useful plugins and techniques.
 
