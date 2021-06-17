@@ -48,7 +48,7 @@ This repository contains sample setup for building optimised docker image and sh
   java -Djarmode=layertools -jar spring-docker-setup-0.0.1-SNAPSHOT.jar extract
   ```
   
-* Checkout created directories(application, dependencies, snapshot-dependencies and spring-boot-loader) 
+* Analyse created directories(application, dependencies, snapshot-dependencies and spring-boot-loader) 
 
 ## Other Useful Commands
 
