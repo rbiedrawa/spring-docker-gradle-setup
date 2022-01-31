@@ -14,7 +14,7 @@ This repository contains sample setup for building optimised docker image and sh
 
 ## Getting Started
 
-### Prerequisite
+### Prerequisites
 
 * Java 11
 * Docker
